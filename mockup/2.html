@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Curtis P. Neumann, CPA · Finance Transformation Leader</title>
+<meta name="description" content="Finance Transformation Leader and CFO Advisor. FP&A, ERP/EPM, reporting and data modernization. Ex-Deloitte CPA." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #FAFAF6;
+    --panel: #FFFFFF;
+    --ink: #0E1014;
+    --ink-2: #1F2228;
+    --muted: #5C6068;
+    --rule: #E5E2D9;
+    --accent: #C2410C;
+    --accent-2: #0F4E45;
+    --max: 1200px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: none; }
+  a:hover { color: var(--accent); }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.75rem; letter-spacing: 0.02em; }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  /* Header */
+  header.site {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 18px 0;
+    position: sticky; top: 0;
+    z-index: 5;
+  }
+  header.site .row {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    font-weight: 600; font-size: 0.9375rem; letter-spacing: -0.01em;
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--bg);
+  }
+  .brand::before {
+    content: ""; width: 10px; height: 10px;
+    background: var(--accent); border-radius: 2px;
+  }
+  nav.contact {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    font-size: 0.8125rem;
+  }
+  nav.contact a {
+    color: var(--bg);
+    padding: 6px 12px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 999px;
+    transition: all .15s ease;
+  }
+  nav.contact a:hover { background: var(--bg); color: var(--ink); border-color: var(--bg); }
+
+  /* Hero */
+  .hero {
+    padding: 84px 0 56px;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 64px;
+    align-items: start;
+    border-bottom: none;
+  }
+  .hero-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 36px;
+    color: var(--muted);
+    font-size: 0.8125rem;
+  }
+  .hero-meta div { display: flex; flex-direction: column; gap: 4px; }
+  .hero-meta strong { color: var(--ink); font-weight: 500; font-size: 0.875rem; }
+  .hero-meta .lab { text-transform: uppercase; letter-spacing: 0.13em; font-size: 0.6875rem; color: var(--muted); }
+  h1 {
+    font-weight: 600;
+    font-size: clamp(2.5rem, 6.5vw, 4.75rem);
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    margin: 0 0 24px;
+    color: var(--ink);
+  }
+  h1 .accent { color: var(--accent); }
+  .lede {
+    font-size: 1.1875rem; line-height: 1.5;
+    color: var(--ink-2); max-width: 56ch;
+    margin: 0 0 32px;
+  }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    color: var(--ink-2);
+  }
+  .pill.dark { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  .cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: var(--bg);
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+    transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .cta-link:hover {
+    background: #9F340A;
+    color: var(--bg);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px -10px rgba(194, 65, 12, 0.55);
+  }
+  .cta-link .arrow { transition: transform .15s ease; }
+  .cta-link:hover .arrow { transform: translateX(3px); }
+
+  .portrait-card {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 14px;
+    display: flex; flex-direction: column; gap: 14px;
+    align-self: start;
+  }
+  .portrait-card .img {
+    aspect-ratio: 1131 / 1600;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #ddd;
+  }
+  .portrait-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .portrait-card .meta {
+    display: flex; justify-content: space-between;
+    color: var(--muted);
+    padding: 0 4px;
+    align-items: end;
+  }
+  .portrait-card .meta .name { color: var(--ink); font-weight: 500; font-size: 0.875rem; }
+  .portrait-card .status {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent-2); font-weight: 500; font-size: 0.75rem;
+  }
+  .portrait-card .status::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent-2); display: inline-block;
+    box-shadow: 0 0 0 3px rgba(15,78,69,0.15);
+  }
+
+  /* Stats grid */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    margin: 24px 0 0;
+  }
+  .stat {
+    padding: 28px 22px 24px;
+    border-right: 1px solid var(--rule);
+    display: flex; flex-direction: column;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num {
+    font-weight: 600;
+    font-size: 3.25rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+  }
+  .stat .num .small { font-size: 1.75rem; vertical-align: top; line-height: 1; color: var(--accent); margin-left: 2px; }
+  .stat .num.accent { color: var(--accent); }
+  .stat .label {
+    margin-top: 14px;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  /* Section */
+  section { padding: 96px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: none; }
+  .section-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 56px;
+  }
+  .section-grid .label-col {
+    position: sticky; top: 90px; align-self: start;
+  }
+  .section-grid h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .section-grid .num-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+  .section-grid .lede-2 {
+    font-size: clamp(1.375rem, 2.4vw, 1.875rem);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin: 0 0 32px;
+    max-width: 28ch;
+    font-weight: 500;
+  }
+  .section-grid p { margin: 0 0 18px; max-width: 64ch; color: var(--ink-2); }
+
+  /* Expertise cards */
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .skill {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 22px 22px 24px;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .skill:hover { border-color: var(--ink); }
+  .skill .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--accent);
+    margin-bottom: 18px;
+    letter-spacing: 0.06em;
+  }
+  .skill h3 { font-size: 1.0625rem; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .skill p { margin: 0; font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+
+  /* Experience */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .role {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-top: 1px solid var(--rule);
+    align-items: start;
+  }
+  .role:first-child { border-top: 1px solid var(--ink); }
+  .role .when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    padding-top: 4px;
+  }
+  .role .org {
+    color: var(--accent);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.108em;
+    margin-bottom: 6px;
+    font-family: 'Inter', sans-serif;
+  }
+  .role h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin: 0 0 14px;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+  }
+  .role ul { margin: 0; padding-left: 18px; color: var(--ink-2); }
+  .role ul li { margin-bottom: 8px; line-height: 1.55; }
+  .role ul li::marker { color: var(--accent); }
+
+  /* Education */
+  .edu-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .edu-card {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 22px;
+  }
+  .edu-card .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    margin-bottom: 14px;
+  }
+  .edu-card h3 { margin: 0 0 4px; font-size: 1.0625rem; font-weight: 600; }
+  .edu-card p { margin: 0; color: var(--muted); font-size: 0.875rem; }
+
+  .pub-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+  .pub-list li {
+    border-top: 1px solid var(--rule);
+    padding: 22px 0;
+  }
+  .pub-list li:first-child { border-top: 1px solid var(--ink); }
+  .pub-list li:last-child { border-bottom: 1px solid var(--rule); }
+  .pub-list a {
+    display: block;
+    color: var(--ink);
+    transition: color .15s ease;
+  }
+  .pub-list a:hover { color: var(--accent); }
+  .pub-list a:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+  .pub-list h3 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+    line-height: 1.35;
+  }
+  .pub-list h3 .ext {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-left: 8px;
+    display: inline-block;
+    transition: transform .15s ease;
+    text-decoration: none;
+  }
+  .pub-list a:hover .ext { transform: translate(2px, -2px); }
+  .pub-list p { margin: 0; color: var(--muted); font-size: 0.875rem; line-height: 1.5; max-width: 60ch; }
+  .cert-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    margin-top: 12px;
+    transition: color .15s ease;
+  }
+  .cert-link:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+
+  /* Footer CTA */
+  footer.cta {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 96px 0 32px;
+  }
+  footer.cta .grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 56px;
+    align-items: end;
+  }
+  footer.cta h2 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 600;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    margin: 0 0 16px;
+    max-width: 14ch;
+  }
+  footer.cta h2 .accent { color: var(--accent); }
+  footer.cta p { color: rgba(250,250,246,0.7); max-width: 50ch; margin: 0 0 32px; }
+  footer.cta .channels {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  footer.cta .channel {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    color: var(--bg);
+    transition: padding .15s ease;
+  }
+  footer.cta .channel:hover { padding-left: 8px; padding-right: 8px; }
+  footer.cta .channel:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
+  footer.cta .channel .lab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(250,250,246,0.55);
+  }
+  footer.cta .channel .val {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .colophon {
+    margin-top: 40px;
+    color: rgba(250,250,246,0.5);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 1080px) {
+    .hero { grid-template-columns: 1fr 300px; gap: 48px; }
+  }
+  @media (max-width: 880px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 56px 0 40px;
+    }
+    .portrait-card { max-width: 280px; align-self: center; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: none; }
+    .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--rule); }
+    .section-grid { grid-template-columns: 1fr; gap: 24px; }
+    .section-grid .label-col { position: static; }
+    .skill-grid, .edu-grid { grid-template-columns: 1fr; }
+    .role { grid-template-columns: 1fr; gap: 8px; }
+    footer.cta .grid { grid-template-columns: 1fr; gap: 32px; }
+    section { padding: 64px 0; }
+  }
+  @media (max-width: 520px) {
+    .hero-meta { grid-template-columns: 1fr; gap: 12px; }
+    nav.contact a { padding: 5px 10px; font-size: 0.75rem; }
+    .stats { grid-template-columns: 1fr; }
+    .stat { border-right: none; border-bottom: 1px solid var(--rule); }
+    .stat:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap row">
+    <a class="brand" href="#top">Curtis P. Neumann, CPA</a>
+    <nav class="contact" aria-label="Contact">
+      <a href="https://www.linkedin.com/in/curtispneumann/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:curtis@curtisneumann.com">Email</a>
+      <a href="tel:+15107360106">510.736.0106</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="hero-meta">
+          <div><span class="lab">Role</span><strong>Finance Transformation · CFO Advisory</strong></div>
+          <div><span class="lab">Location</span><strong>San Francisco Bay Area</strong></div>
+          <div><span class="lab">Status</span><strong>Open to engagements</strong></div>
+          <div><span class="lab">Experience</span><strong>30+ years · CPA · Ex-Deloitte</strong></div>
+        </div>
+
+        <h1 id="hero-title">
+          Modern finance functions, <span class="accent">built to scale</span>.
+        </h1>
+        <p class="lede">
+          I help CFOs and finance teams modernize FP&amp;A, reporting, and finance technology, bridging finance and technology to turn complex requirements into scalable, high-impact solutions.
+        </p>
+        <a class="cta-link" href="mailto:curtis@curtisneumann.com?subject=Let%27s%20work%20together">Work with me <span class="arrow">→</span></a>
+      </div>
+
+      <aside class="portrait-card" aria-label="Portrait">
+        <div class="img"><img src="../assets/portrait-square.jpg" alt="Portrait of Curtis P. Neumann" /></div>
+        <div class="meta">
+          <div>
+            <div class="name">Curtis P. Neumann, CPA</div>
+          </div>
+          <div class="status">Available</div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="stats" aria-label="Selected impact">
+      <div class="stat">
+        <div class="num accent">80<span class="small">%</span></div>
+        <div class="label">Reduction in regulatory reporting time at MUFG (FR Y-15).</div>
+      </div>
+      <div class="stat">
+        <div class="num">95<span class="small">%</span></div>
+        <div class="label">Manual financial calculation risk eliminated through automation.</div>
+      </div>
+      <div class="stat">
+        <div class="num">$2M<span class="small">+</span></div>
+        <div class="label">Annual savings delivered through workflow automation.</div>
+      </div>
+      <div class="stat">
+        <div class="num">30<span class="small">yrs</span></div>
+        <div class="label">Across telecom, global banking, and consulting.</div>
+      </div>
+    </div>
+
+    <section aria-labelledby="about-title">
+      <div class="section-grid">
+        <div class="label-col">
+          <div class="num-tag">01 / About</div>
+          <h2 id="about-title">Background</h2>
+        </div>
+        <div>
+          <p class="lede-2">A foundation as a CPA, with three decades bridging finance and technology.</p>
+          <p>I lead end-to-end transformation initiatives, from strategy through implementation and adoption, aligning stakeholders across finance, IT, and HR while delivering measurable business outcomes.</p>
+          <p>My experience spans telecommunications and global banking. I'm known for a hands-on, data-driven approach that translates complex concepts into actionable insights and execution.</p>
+          <p>Currently open to finance transformation leadership, consulting, and advisory engagements where I can help organizations build scalable, data-driven finance functions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="pub-title">
+      <div class="section-grid">
+        <div class="label-col">
+          <div class="num-tag">02 / Writing</div>
+          <h2 id="pub-title">Featured</h2>
+        </div>
+        <div>
+          <p class="lede-2">Selected presentations on EPM, FP&amp;A, and Essbase modernization.</p>
+          <ul class="pub-list">
+            <li>
+              <a href="https://www.slideshare.net/Curtis_Neumann/the-role-of-process-owners-in-successful-epm-implementations" target="_blank" rel="noopener">
+                <div>
+                  <h3>The Role of Process Owners in Successful EPM Implementations<span class="ext">↗</span></h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.slideshare.net/Curtis_Neumann/new-final-high-performance-driver-based-modelingat-att" target="_blank" rel="noopener">
+                <div>
+                  <h3>High Performance Driver-Based Modeling at AT&amp;T<span class="ext">↗</span></h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.slideshare.net/Curtis_Neumann/utililizing-key-aspects-of-oracle-essbase-to-run-finance-in-sixth-gear" target="_blank" rel="noopener">
+                <div>
+                  <h3>Utilizing Key Aspects of Oracle Essbase to Run Finance in Sixth Gear<span class="ext">↗</span></h3>
+                  <p>Examples of using Essbase to solve large number-crunching needs.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.slideshare.net/Curtis_Neumann/how-to-collect-budget-data-across20-30-dims" target="_blank" rel="noopener">
+                <div>
+                  <h3>How To Collect Budget Data Across 20 to 30 Dimensions<span class="ext">↗</span></h3>
+                  <p>Oracle Planning solution for collecting sparse data sets across many dimensions.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="exp-title">
+      <div class="section-grid">
+        <div class="label-col">
+          <div class="num-tag">03 / Expertise</div>
+          <h2 id="exp-title">Core areas</h2>
+        </div>
+        <div>
+          <p class="lede-2">Where finance, data, and operating systems meet.</p>
+          <div class="skill-grid">
+            <div class="skill">
+              <div class="num">/01</div>
+              <h3>Finance Transformation</h3>
+              <p>Record-to-Report and Plan-to-Forecast, from strategy through adoption.</p>
+            </div>
+            <div class="skill">
+              <div class="num">/02</div>
+              <h3>FP&amp;A Strategy &amp; Modeling</h3>
+              <p>Forecasting accuracy and speed via advanced FP&amp;A modeling.</p>
+            </div>
+            <div class="skill">
+              <div class="num">/03</div>
+              <h3>ERP / EPM Implementations</h3>
+              <p>Oracle Hyperion, Essbase, and modern cloud EPM platforms.</p>
+            </div>
+            <div class="skill">
+              <div class="num">/04</div>
+              <h3>Reporting &amp; Analytics</h3>
+              <p>Real-time executive dashboards for performance management.</p>
+            </div>
+            <div class="skill">
+              <div class="num">/05</div>
+              <h3>Data Governance</h3>
+              <p>Data quality and regulatory reporting under BCBS 239.</p>
+            </div>
+            <div class="skill">
+              <div class="num">/06</div>
+              <h3>Program Leadership</h3>
+              <p>Cross-functional delivery across Finance, IT, and HR.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="roles-title">
+      <div class="section-grid">
+        <div class="label-col">
+          <div class="num-tag">04 / Experience</div>
+          <h2 id="roles-title">Selected roles</h2>
+        </div>
+        <div>
+          <p class="lede-2">Three decades of hands-on finance and systems leadership.</p>
+
+          <div class="timeline">
+            <div class="role">
+              <div class="when">2026<br>Present</div>
+              <div>
+                <div class="org">Self-employed</div>
+                <h3>Finance Transformation &amp; FP&amp;A Consultant</h3>
+                <ul>
+                  <li>Advising growth-stage technology companies on financial planning, reporting automation, and finance systems design.</li>
+                  <li>Supporting data modeling, KPI frameworks, and executive dashboards for improved decision making.</li>
+                  <li>Partnering with finance leaders on ERP optimization, forecasting models, and operational analytics.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="role">
+              <div class="when">2012<br>2025</div>
+              <div>
+                <div class="org">MUFG · 14 yrs</div>
+                <h3>Sr. Manager, Business &amp; Data Analysis · System Manager, Regulatory Stress Testing</h3>
+                <ul>
+                  <li>Led the bank's Federal Reserve Stress Testing (CCAR FR Y-14) Oracle platform, cutting preparation time by 90% and remediating MRA orders.</li>
+                  <li>Built FR Y-15 Systemic Risk reporting on Axiom SL Controllerview, reducing compilation effort by 80% with lower error risk.</li>
+                  <li>Implemented LawLogix I-9 and Saba SaaS-to-Workday HR integrations, saving $2M in annual resource costs.</li>
+                  <li>Assessed 23 financial-crimes systems against BCBS 239 maturity, reporting quarterly to managing-director-level executives.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="role">
+              <div class="when">1994<br>2011</div>
+              <div>
+                <div class="org">AT&amp;T · 17 yrs</div>
+                <h3>Associate Director, Corporate FP&amp;A</h3>
+                <ul>
+                  <li>Designed the Hyperion Financial Management consolidation platform, cutting reporting time by 50% and saving $500K per year.</li>
+                  <li>Introduced Oracle Hyperion Essbase as the modern FP&amp;A engine, increasing accuracy by 90% and doubling efficiency.</li>
+                  <li>Built 10-year enterprise planning models replacing 30+ spreadsheets with 10× faster reprocessing.</li>
+                  <li>Developed over-time analytics cubes that surfaced $40M in annual operating savings.</li>
+                  <li>Produced quarterly CFO Board of Directors and S&amp;P Telecom benchmarking packages.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="edu-title">
+      <div class="section-grid">
+        <div class="label-col">
+          <div class="num-tag">05 / Credentials</div>
+          <h2 id="edu-title">Education</h2>
+        </div>
+        <div>
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="num">/UNIVERSITY</div>
+              <h3>UC Berkeley</h3>
+              <p>B.S. Business Administration &amp; Management</p>
+            </div>
+            <div class="edu-card">
+              <div class="num">/CERTIFICATION</div>
+              <h3>Certified Public Accountant</h3>
+              <p>Plus: AI-Driven Accountant &amp; AI-Driven Financial Analyst (LinkedIn, 2026).</p>
+              <a class="cert-link" href="https://www.linkedin.com/in/curtispneumann/details/certifications/" target="_blank" rel="noopener">See all 15 certifications on LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="cta">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <h2>Let's modernize your finance <span class="accent">function.</span></h2>
+          <p>Open to fractional CFO advisory, transformation leadership, and consulting engagements.</p>
+        </div>
+        <div class="channels">
+          <a class="channel" href="mailto:curtis@curtisneumann.com">
+            <span class="lab">Email</span>
+            <span class="val">curtis@curtisneumann.com →</span>
+          </a>
+          <a class="channel" href="tel:+15107360106">
+            <span class="lab">Phone</span>
+            <span class="val">510.736.0106 →</span>
+          </a>
+          <a class="channel" href="https://www.linkedin.com/in/curtispneumann/" target="_blank" rel="noopener">
+            <span class="lab">LinkedIn</span>
+            <span class="val">/in/curtispneumann ↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="colophon">
+        <span>© 2026 CURTIS P. NEUMANN, CPA</span>
+        <span>SAN FRANCISCO BAY AREA</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>
